@@ -5,7 +5,7 @@ import 'dart:io';
 
 void main() async {
   // String yaml = arguments[0];
-  String yaml = 'models.dart';
+  String yaml = 'models.yaml';
   final currentDirectory = Directory.current.path.toString();
   print(currentDirectory);
   final filePath = normalize(join(currentDirectory, yaml));
