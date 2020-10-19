@@ -1,6 +1,6 @@
 name: yaml_to_model
 description: YAML to Model Generator
-version: 0.0.1
+version: 0.0.2
 author: Issam Alameh
 homepage: https://www.github.com/ialameh
 executables:
