@@ -3,10 +3,7 @@ import "package:path/path.dart" show  join, normalize;
 import 'dart:convert';
 import 'dart:io';
 
-main(List<String> arguments) async {
-  if (arguments.length != 1) {
-    exit(999);
-  }
+void main() async {
   // String yaml = arguments[0];
   String yaml = 'models.dart';
   final currentDirectory = Directory.current.path.toString();
@@ -17,7 +14,7 @@ main(List<String> arguments) async {
     yamlRawData = new File(filePath).readAsStringSync();
   } catch (e) {
     print('you need to have properly formated models.yaml file');
-    print('please refer to documentation');
+    print('please refer to documentation.');
     exit(0);
 
   }
